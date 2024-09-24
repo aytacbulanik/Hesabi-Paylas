@@ -53,9 +53,8 @@ class ViewController: UIViewController {
     
     @IBAction func calculateButtonPressed(_ sender: UIButton) {
         guard let cost = costField.text else { return }
-        //guard let doubleCost = Double(cost) else { return }
-        print(person , cost , tip)
-        //print(Double(person) * doubleCost)
+        guard let doubleCost = Double(cost) else { return }
+        
     }
 }
 

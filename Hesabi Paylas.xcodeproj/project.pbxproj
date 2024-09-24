@@ -10,22 +10,9 @@
 		B4901F9B2CA1E77A00756B31 /* Hesabi Paylas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hesabi Paylas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		B4901FAD2CA1E77B00756B31 /* Exceptions for "Hesabi Paylas" folder in "Hesabi Paylas" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = B4901F9A2CA1E77A00756B31 /* Hesabi Paylas */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		B4901F9D2CA1E77A00756B31 /* Hesabi Paylas */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				B4901FAD2CA1E77B00756B31 /* Exceptions for "Hesabi Paylas" folder in "Hesabi Paylas" target */,
-			);
 			path = "Hesabi Paylas";
 			sourceTree = "<group>";
 		};

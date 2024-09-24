@@ -26,6 +26,24 @@ class ViewController: UIViewController {
         personLabel.text = "\(Int(sender.value))"
     }
     
+    
+    @IBAction func buttonColorChanged(_ sender: UIButton) {
+        
+        if sender.tag == 1 {
+            tenButtonOut.backgroundColor = .greenBackground
+            thirtyButtonOut.backgroundColor = .white
+            twentyButtonOut.backgroundColor = .white
+        } else if sender.tag == 2 {
+            tenButtonOut.backgroundColor = .white
+            thirtyButtonOut.backgroundColor = .white
+            twentyButtonOut.backgroundColor = .greenBackground
+        } else if sender.tag == 3 {
+            tenButtonOut.backgroundColor = .white
+            thirtyButtonOut.backgroundColor = .greenBackground
+            twentyButtonOut.backgroundColor = .white
+        }
+    }
+    
     @IBAction func calculateButtonPressed(_ sender: UIButton) {
         
     }

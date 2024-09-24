@@ -42,7 +42,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="2PK-Tw-mvy">
                                         <rect key="frame" x="20" y="85" width="353" height="50"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9D-7N-7lR">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9D-7N-7lR">
                                                 <rect key="frame" x="0.0" y="0.0" width="100.33333333333333" height="50"/>
                                                 <color key="backgroundColor" red="0.90588235859999999" green="0.98039215800000001" blue="0.9529411793" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="tintColor" red="0.90588235859999999" green="0.98039215800000001" blue="0.9529411793" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -51,8 +51,11 @@
                                                     <fontDescription key="titleFontDescription" name="Impact" family="Impact" pointSize="23"/>
                                                     <color key="baseForegroundColor" red="0.40188615799999999" green="0.93196319189999999" blue="0.58718627599999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="buttonColorChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i5V-To-iGE"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zx4-8P-aFI">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zx4-8P-aFI">
                                                 <rect key="frame" x="126.33333333333334" y="0.0" width="100.33333333333334" height="50"/>
                                                 <color key="backgroundColor" red="0.90588235859999999" green="0.98039215800000001" blue="0.9529411793" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="tintColor" red="0.90588235859999999" green="0.98039215800000001" blue="0.9529411793" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -61,8 +64,11 @@
                                                     <fontDescription key="titleFontDescription" name="Impact" family="Impact" pointSize="23"/>
                                                     <color key="baseForegroundColor" red="0.40188615799999999" green="0.93196319189999999" blue="0.58718627599999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="buttonColorChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pZS-MT-nZc"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIR-va-ZUa">
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIR-va-ZUa">
                                                 <rect key="frame" x="252.66666666666671" y="0.0" width="100.33333333333334" height="50"/>
                                                 <color key="backgroundColor" red="0.90588235859999999" green="0.98039215800000001" blue="0.9529411793" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="tintColor" red="0.90588235859999999" green="0.98039215800000001" blue="0.9529411793" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -71,6 +77,9 @@
                                                     <fontDescription key="titleFontDescription" name="Impact" family="Impact" pointSize="23"/>
                                                     <color key="baseForegroundColor" red="0.40188615799999999" green="0.93196319189999999" blue="0.58718627599999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="buttonColorChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kPl-84-w8t"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>

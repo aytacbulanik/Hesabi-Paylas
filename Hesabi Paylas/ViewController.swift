@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func stepperPressed(_ sender: UIStepper) {
-        print(sender.value)
+        personLabel.text = "\(Int(sender.value))"
     }
     
     @IBAction func calculateButtonPressed(_ sender: UIButton) {

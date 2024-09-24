@@ -34,7 +34,7 @@
                                 </constraints>
                                 <color key="textColor" red="0.39607840779999998" green="0.71764707569999997" blue="0.53333336109999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gRy-7a-iMk">
                                 <rect key="frame" x="0.0" y="224" width="393" height="594"/>

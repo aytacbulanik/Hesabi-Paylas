@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var stepperOut: UIStepper!
     @IBOutlet weak var personLabel: UILabel!
     
-    var person : Int = 1
+    var person : Double = 1
     var tip : Double = 0.0
     var costResultManager = CostResultManager()
     
@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func stepperPressed(_ sender: UIStepper) {
-        person = Int(sender.value)
+        person = sender.value
         personLabel.text = "\(Int(sender.value))"
     }
     
@@ -38,12 +38,16 @@ class ViewController: UIViewController {
         tenButtonOut.backgroundColor = buttonUI.0
         twentyButtonOut.backgroundColor = buttonUI.1
         thirtyButtonOut.backgroundColor = buttonUI.2
+        tip = costResultManager.calculateTip(tag: tag)
+        print(tip)
     }
     
     @IBAction func calculateButtonPressed(_ sender: UIButton) {
         guard let cost = costField.text else { return }
         guard let doubleCost = Double(cost) else { return }
         
+        let result = (doubleCost + (doubleCost * tip/100)) / person
+        print(result)
     }
 }
 

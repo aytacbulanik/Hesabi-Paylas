@@ -24,7 +24,8 @@ class ResultVC: UIViewController {
         let tip = Double(result.tip)
         let person = Double(result.person)
         let sonuc = (doubleCost + (doubleCost * tip/100)) / person
-        
+        detailLabel.text = "Bu hesabı \(Int(person)) kişi % \(Int(tip)) tutarında bahşişle ödeyecek"
+        resultLabel.text = "\(sonuc) TL"
     }
     
 

@@ -56,5 +56,9 @@ class ViewController: UIViewController {
             destinationVC.result = costResult
         }
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        costField.text = ""
+    }
 }
 

@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     var person : Double = 1
     var tip : Double = 0.0
     var costResultManager = CostResultManager()
-    
+    var costResult : CostResult?
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -46,8 +46,15 @@ class ViewController: UIViewController {
         guard let cost = costField.text else { return }
         guard let doubleCost = Double(cost) else { return }
         
-        let result = (doubleCost + (doubleCost * tip/100)) / person
-        print(result)
+        costResult = CostResult(cost: doubleCost, tip: tip, person: person)
+        performSegue(withIdentifier: "resultSegue", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "resultSegue" {
+            let destinationVC = segue.destination as! ResultVC
+            destinationVC.result = costResult
+        }
     }
 }
 

@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     
     var person : Int = 1
     var tip : Double = 0.0
+    var costResultManager = CostResultManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,23 +33,11 @@ class ViewController: UIViewController {
     
     
     @IBAction func buttonColorChanged(_ sender: UIButton) {
-        
-        if sender.tag == 1 {
-            tenButtonOut.backgroundColor = .greenBackground
-            thirtyButtonOut.backgroundColor = .white
-            twentyButtonOut.backgroundColor = .white
-            tip = 10.0
-        } else if sender.tag == 2 {
-            tenButtonOut.backgroundColor = .white
-            thirtyButtonOut.backgroundColor = .white
-            twentyButtonOut.backgroundColor = .greenBackground
-            tip = 20.0
-        } else if sender.tag == 3 {
-            tenButtonOut.backgroundColor = .white
-            thirtyButtonOut.backgroundColor = .greenBackground
-            twentyButtonOut.backgroundColor = .white
-            tip = 30.0
-        }
+        let tag = sender.tag
+        let buttonUI = costResultManager.updateButtonUI(tag: tag)
+        tenButtonOut.backgroundColor = buttonUI.0
+        twentyButtonOut.backgroundColor = buttonUI.1
+        thirtyButtonOut.backgroundColor = buttonUI.2
     }
     
     @IBAction func calculateButtonPressed(_ sender: UIButton) {
